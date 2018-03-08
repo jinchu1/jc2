@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*
+{
+margin:0;
+padding:0;
+font-size:12px;
+}
+
+body
+{
+	background-color:#F5F5F5;
+}
+
+.top
+{
+	width:100%;
+	height:27px;
+	background:url(../images/top_bg.jpg) repeat-x;
+}
+.top_content
+{
+	width:1000px;
+	margin:0 auto;
+}
+.top_content li
+{
+	list-style-image:url(../images/li_bg.gif);
+	float:right;
+	width:70px;
+	line-height:27px;
+}
+.wrap
+{
+	width:1000px;
+	margin:0 auto;
+}
+.logo
+{
+	height:80px;
+	background-color:#FFF;
+}
+
+.logo_left
+{
+	width:200px;
+	float:left;
+	
+}
+.logo_right
+{
+	width:300px;
+	float:right;
+	height:28px;
+	margin-top:30px;
+	color:#8E8E8E;
+}
+
+.logo_right img
+{
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+.tel
+{
+	font-family:"微软雅黑";
+	font-size:16px;
+	color:#50B6C4;
+}
+.nav
+{
+	height:40px;
+}
+
+.nav_left
+{
+	width:10px;
+	background:url(../images/nav2.jpg) no-repeat;
+	float:left;
+	height:40px;
+}
+.nav_mid
+{
+	width:980px;
+	background:url(../images/nav_bg2.jpg) repeat-x;
+float:left;
+height:40px;
+}
+.nav_right
+{
+	width:10px;
+	background:url(../images/nav2.jpg) no-repeat;
+	float:left;
+	height:40px;
+}
+
+.nav_mid_left,.nav_mid_right
+{
+	float:left;
+}
+.nav_mid_left
+{
+	width:680px;
+}
+.nav_mid_right
+{
+	width:300px;
+}
+
+.nav_mid_left li
+{
+	float:left;
+	list-style-type:none;
+	width:100px;
+	text-align:center;
+	line-height:40px;
+}
+.nav_mid_left a:link,.nav_mid_left a:visited
+{
+	text-decoration:none;
+	color:#FFF;
+	font-size:16px;
+	font-family:"微软雅黑";
+}
+.nav_mid_left a:hover,.nav_mid_left a:active
+{
+	text-decoration:none;
+	color:#FF0;
+	font-size:16px;
+	font-family:"微软雅黑";
+}
+.search_text
+{
+	width:190px;
+	height:25px;
+	margin-top:5px;
+	background:url(../images/search.jpg) no-repeat right center;
+	background-color:#FFF;
+	padding-right:25px;
+	border:1px solid #FFF;
+}
+.ad {
+	height: 310px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.main {
+	height: 250px;
+	margin-top: 5px;
+	background-color: #FFF;
+}
+.news {
+	width: 340px;
+	border:1px solid #E8E8E8;
+}
+.course {
+	width: 410px;
+	margin: 0 7px;
+	border:1px solid #E8E8E8;
+}
+.sidebar {
+	width: 230px;
+	float: left;
+	display: inline;
+	height: 250px;
+}
+.news,.course,.sidebar {
+	float: left;
+	display: inline;
+	height: 250px;
+	border: 1px solid #E8E8E8;
+}
+.title {
+	height: 35px;
+	border-bottom: 2px solid #E8E8E8;
+	
+}
+.title_left {
+	width: 70%;
+	float: left;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #786F66;
+	line-height:35px;
+	padding-left:20px;
+}
+
+.title_right
+{
+	width:20%;
+	float:right;
+	line-height:35px;
+	text-align:right;
+}
+
+
+.title_right a {
+	color: #999;
+	text-decoration: none;
+	font-family: "宋体";
+	font-size: 10px;
+	font-weight: normal;
+	padding-right: 10px;
+}
+.pic_news {
+	height: 80px;
+	margin-top: 10px;
+	line-height: 22px;
+}
+.pic_news img, .course_pic img {
+	float: left;
+	margin: 0 5px;
+}
+.pic_news a, .course_pic a {
+	color: #C00;
+	text-decoration: none;
+}
+.red {
+	color: #C00;
+	font-weight: bold;
+}
+.news_list {
+	/*height:90px;*/
+	margin-top: 20px;
+}
+.news_list li {
+	background: url(../images/list2.jpg) no-repeat;
+	list-style-type: none;
+	padding-left: 10px;
+	margin: 8px;
+	border-bottom: 1px dotted #CCC;
+	height: 17px;
+	line-height: 17px;
+}
+.news_list span {
+	float: right;
+	color: #999;
+}
+.news_list a:link, .news_list a:visited {
+	text-decoration: none;
+	color: #000;
+}
+.news_list a:hover, .news_list a:active {
+	color: #F00;
+	text-decoration: none;
+}
+.news_list span
+{
+	color::#999;
+	float:right;
+}
+.course_pic
+{
+	height:120px;
+	margin-top:10px;
+	line-height:22px;
+}
+.course_type
+{
+	height:37px;
+	width:372px;
+	background:url(../images/product_type_bg.jpg) no-repeat;
+	margin:20px auto;
+}
+.course_type li
+{
+	list-style-type:none;
+	float:left;
+	line-height:37px;
+	margin:0 15px;
+	text-align:center;
+	
+}
+.video
+{
+	height:185px;
+	border:1px solid #E8E8E8;
+}
+.video_content
+{
+	height:150px;
+}
+.sidebar_ad
+{
+	margin-top:10px;
+	height:55px;
+border:1px solid #E8E8E8;
+}
+
+.copyright
+{
+	width:100%;
+	height:200px;
+	background-color:#E8E8E8;
+	margin-top:10px;
+	clear:both;
+}
+.copyright_content
+{
+	width:1000px;
+	margin:0 auto;
+	padding-top:20px;
+}
+
+.copyright_content li
+{
+	list-style-type:none;
+	float:left;
+	width:200px;
+	background:url(../images/line.png) no-repeat right center;
+	text-align:center;
+	line-height:30px;
+	font-family:"微软雅黑";
+}
+.copyright_content a
+{
+	text-decoration:none;
+	color:#999;
+	font-size:18px;
+}
+.copyright_content li ul li a
+{
+	font-size:14px;
+}
+.list_main{
+	min-height:350px;
+	
+	background-color:#FFF;
+	margin-top:10px;
+}
+.news_type
+{
+	width:220px;
+	height:350px;
+	border:1px solid #E8E8E8;
+	
+	float:left;
+}
+.list_box
+{
+	width:770px;
+	min-height:350px;
+	
+	border:1px solid #E8E8E8;
+	float:right;
+}
+.news_type h2
+{
+	height:35px;
+	line-height:35px;
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#666;
+	background:url(../images/titile_bg.gif) repeat-x;
+	padding-left:20px;
+}
+.news_type_content
+{
+	height:365px;
+	background:url(../images/content_bg.gif) repeat-x;
+}
+.news_type_content li
+{
+	list-style-type:none;
+	height:30px;
+	line-height:30px;
+}
+.news_type_content li a
+{
+	color:#666;
+	text-decoration:none;
+	background:url(../images/li_bg.gif) no-repeat left center;
+	padding-left:15px;
+	display:block;
+}
+.news_type_content li a:hover
+{
+	color:#009CDF;
+	background:url(../images/li_bg2.gif) no-repeat left center;
+	background-color:#F2F2F2;
+}
+.list_box h2
+{
+	font-size:14px;
+	font-family:"微软雅黑";
+	color:#666;
+	height:35px;
+	line-height:35px;
+	background:url(../images/type_bg2.png) repeat-x;
+	padding-left:20px;
+}
+.page
+{
+	height:40px;
+	margin-top:10px;
+	text-align:center;
+}
+.page a
+{
+	border:1px solid #E8E8E8;
+	text-decoration:none;
+	margin:5px;
+	padding:5px 10px;
+	display:inline-block;
+}
+
+.page a:link,.page a:visited
+{
+	color:#000;
+}
+
+
+.page a:hover,.page a:active
+{
+	color:#FFF;
+	background-color:#50B6C4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+<div class="top">
+<div class="top_content">
+<ul>
+<li>加入我们</li>
+<li>联系我们</li>
+<li>设为首页</li>
+</ul>
+</div>
+</div>
+<div class="wrap">
+<div class="logo">
+<div class="logo_left">
+<img src="../images/LOGO 3.jpg" alt="慕课网"/>
+
+</div>
+<div class="logo_right">
+<img src="../images/tel.jpg" alt="服务热线"/>24小时服务热线：<span class="tel">123-456-789</span>
+</div>
+</div>
+<div class="nav">
+<div class="nav_left"></div>
+<div class="nav_mid">
+<div class="nav_mid_left">
+<ul>
+<li><a href="纺大.html">首页</a></li>
+<li><a href="关于武纺.html">关于武纺</a></li>
+<li><a href="新闻动态.html">新闻动态</a></li>
+<li><a href="纺大美景.html">纺大美景</a></li>
+<li><a href="纺大美食.html">纺大美食</a></li>
+<li><a href="纺大教学.html">纺大教学</a></li>
+
+
+</ul>
+</div>
+<div class="nav_mid_right">
+<form action="" method="post">
+<input type="text" class="search_text"/> 
+</form>
+</div>
+</div><!--/*nav— mid结束*/-->
+<div class="nav_right"></div>
+</div><!--nav结束-->
+<div class="ad" id="picBox" style="height:243px;">
+<li><img src="../images/关于武纺.jpg"/>
+
+
+</div><!--ad结束-->
+<div class="list_main">
+<div class="news_type">
+<h2>关于武纺</h2>
+<div class="news_type_content">
+<ul>
+<li><a href="list_html">学校专业</a></li>
+<li><a href="list_html">地理位置</a></li>
+<li><a href="list_html">出行交通</a></li>
+<li><a href="list_html">合作银行</a></li>
+<li><a href="list_html">精彩视频</a></li>
+<li><a href="list_html">学校内刊</a></li>
+</ul>
+
+
+
+</div><!--news_type_content结束-->
+
+
+
+
+
+
+
+
+
+</div><!--news_type结束-->
+<div class="list_box">
+<h2>新闻中心</h2>
+<div class="news_list">
+<ul>
+ <li>
+      <span>2018-01-01</span><a href="news.html" >关于2018年元旦放假相关事宜的通知</a>
+    </li>
+    <li>
+      <span>2018-01-01</span><a href="news.html">2018年度国家社会科学资金项目申报公告</a>
+    </li>
+    <li>
+      <span>2018-01-01</span><a href="news.html">第十六周会议安排表</a>
+    </li>
+    <li>
+      <span>2018-01-01</span><a href="news.html">我校荣获湖北省高校教职工思想政治工作案例创新奖</a>
+    </li>
+    <li>
+     <span>2018-01-01</span><a href="news.html">【获奖】追“球”巅峰，争当“预言帝”</a>
+    </li>
+    <li>
+      <span>2018-01-01</span><a href="news.html">【问卷调查】学生学习情况大调查</a>
+    </li>
+
+
+</ul>
+</div><!--news_list结束-->
+<div class="page"> <a href="#">首页</a><a href="#">&lt;</a><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><a href="#">…</a><a href="#">&gt;</a><a href="#">末页</a> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div><!--list_box结束-->
+
+</div><!--list_main结束-->
+
+</div><!--/*wrap结束*/-->
+<div class="copyright">
+<div class="copyright_content">
+<ul>
+<li><a href="#">关于</a>
+    <ul>
+    <li><a href="#">学校故事</a></li>
+    <li><a href="#">联系我们</a></li>
+    <li><a href="#">加入我们</a></li>
+    <li><a href="#">版权声明</a></li>
+    </ul>
+</li>
+<li><a href="#">课程</a>
+<ul>
+<li><a href="#">图书馆</a></li>
+<li><a href="#">教学楼</a></li>
+<li><a href="#">一食堂</a></li>
+<li><a href="#">宿舍楼</a></li>
+</ul>
+
+
+</li>
+<li><a href="#">留言</a>
+<ul>
+<li><a href="#">新浪微博</a></li>
+<li><a href="#">腾讯微博</a></li>
+<li><a href="#">学校微信</a></li>
+<li><a href="#">qq空间</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+</li>
+<li><a href="#">关注</a>
+<ul>
+<li><a href="#">意见反馈</a></li>
+<li><a href="#">问题留言</a></li>
+<li><a href="#">媒体联络</a></li>
+
+<li><a href="#">在线客服</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+</li>
+<li><a href="#"><img src="../images/weixin.png"/>微信关注</a>
+<ul>
+<li><img src="../images/qrcode2.jpg"/></li>
+
+</ul>
+
+</li>
+
+
+
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
